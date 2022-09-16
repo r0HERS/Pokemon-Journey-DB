@@ -1,0 +1,27 @@
+name: CI
+
+
+on:
+  workflow_dispatch:
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      
+    - uses: azure/docker-login@v1
+      with:
+        login-server: ghcr.io
+        username: ${{ secrets.GHUSER }}
+        password: ${{ secrets.GHTOKEN }}
+      
+    - run: |
+        docker build -t ghcr.io/r0hers/pokemon-journey-db/mongo:latest -f Dockerfile .
+        docker tag ghcr.io/r0hers/pokemon-journey-db/mongo:latest ghcr.io/r0hers/pokemon-journey-db/mongo:${{ github.sha }}
+        
+    - run: |
+       docker push ghcr.io/r0hers/pokemon-journey-db/mongo:latest 
+       docker push ghcr.io/r0hers/pokemon-journey-db/mongo:${{ github.sha }}
+       
