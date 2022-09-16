@@ -1,0 +1,27 @@
+[
+    {
+        "id": "63246b83d2cd85a3bc7f170a",
+        "Greninja": "LV54/Macho/Água e Sombrio",
+        "Talonflame": "LV42/Macho/Voador e Fogo",
+        "Goodra": "LV64/Femea/Dragão",
+        "Avalugg":"LV49/Macho/Gelo",
+        "Heliolisk": "LV45/Macho/Normal e Elétrico"
+    },
+    {
+        "id": "63246b83d2cd85a3bc7f170b",
+        "Delphox": "LV49/Femea/Fogo",
+        "Florgess": "LV40/Femea/Fada",
+        "Furfrou": "LV35/Femea/Normal",
+        "Dedenne": "LV100/Macho/Fada e Elétrico",
+        "Sylveon": "LV45/Femea/Fada",
+        "Slurpuff": "LV39/Femea/Fada"
+    },
+    {
+        "id": "63246b83d2cd85a3bc7f170c",
+        "Chesnought": "LV52/Macho/Planta e Lutador",
+        "Tyrantrum": "LV49/Macho/Pedra e Dragão",
+        "Pangoro": "LV55/macho/Lutador e Sombrio",
+        "Aegislash": "LV47/Macho/Metal e Fantasma",
+        "Pyroar": "LV45/Macho/Normal e Fogo"
+        }
+]
